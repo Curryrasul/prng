@@ -1,27 +1,21 @@
-### Псевдослучайное распределение ###
-***Программа получает на вход файл со списком ФИО, количество билетов и случайный параметр и выводит в консоль данный список с равномерно распределенными билетами.***
+### Pseudo random numbers distribution ###
+***Program gets file with names, number of tickets and seed as arguments and outputs uniform distribution to stdout***
 
 #### Клонирование репозитория и запуск ####
  ```bash
-git clone https://github.com/Curryrasul/prng
-cd prng/
+git clone git@github.com:curryrasul/prng.git && cd prng/
 ```
 
  ```bash
 cargo run --release
 ```
-**Это запустит программу, которая будет считывать ФИО из students.txt и распределять 30 билетов среди студентов, с параметром 10 Для просмотра информации о флагах командной строки введите :**
 
-```bash
-cargo run --release -- --help
-```
-
-**Для сборки проекта введите :**
+**To build:**
 ```bash
 cargo build --release
 ```
 
-**Запуск после сборки :**
+**Run after build:**
 ```bash
 ./target/release/prng --file students.txt --numbilets 30 --parameter 10
 ```
